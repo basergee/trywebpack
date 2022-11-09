@@ -1,0 +1,24 @@
+{
+  "name": "trywebpack",
+  "version": "1.0.0",
+  "description": "Изучаем работу с Webpack и его настройки",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basergee/trywebpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basergee/trywebpack/issues"
+  },
+  "homepage": "https://github.com/basergee/trywebpack#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
