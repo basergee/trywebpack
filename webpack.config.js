@@ -12,6 +12,10 @@ console.log('Hot Module Replacement ' + hmr);
 
 module.exports = {
     mode: mode,
+    entry: './src/index.js',
+    output: {
+        filename: 'main.js'
+    },
     optimization: {
         minimize: false,
     },
