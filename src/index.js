@@ -22,6 +22,7 @@ fetch(url)
             html += '<p>post title: ' + data[i].title + '</p>';
             html += '<p>post author: ' + data[i].author + '</p>';
             html += '</div>';
+            html += '<hr>';
             d.innerHTML += html;
         }
     });
