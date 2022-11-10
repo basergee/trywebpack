@@ -24,5 +24,15 @@ module.exports = {
     devServer: {
         static: './dist',
         hot: hmr
+    },
+
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: '/node_modules',
+                use: 'eslint-loader'
+            }
+        ]
     }
 };
