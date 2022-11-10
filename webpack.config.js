@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 let mode = 'development';
 let hmr = true;
 if (process.env.NODE_ENV === 'production') {
@@ -25,6 +27,12 @@ module.exports = {
         static: './dist',
         hot: hmr
     },
+
+    plugins:[
+        new HtmlWebpackPlugin({
+            template: "./src/index.html"
+        })
+    ],
 
     module: {
         rules: [
