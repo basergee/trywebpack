@@ -14,13 +14,16 @@ fetch(url)
         let d = document.getElementsByClassName('container')[0];
 
         console.log(d);
+        
+        for (let i = 0; i < data.length; i++) {
 
-        let html = '<div class="post">';
-        html += '<p>post id: ' + data[0].id + '</p>';
-        html += '<p>post title: ' + data[0].title + '</p>';
-        html += '<p>post author: ' + data[0].author + '</p>';
-        html += '</div>';
-        d.innerHTML += html;
+            let html = '<div class="post">';
+            html += '<p>post id: ' + data[i].id + '</p>';
+            html += '<p>post title: ' + data[i].title + '</p>';
+            html += '<p>post author: ' + data[i].author + '</p>';
+            html += '</div>';
+            d.innerHTML += html;
+        }
     });
 })
 .catch(function() {
